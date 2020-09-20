@@ -56,3 +56,9 @@ else:
 alien['xPosition'] = alien['xPosition'] + x_increment
 
 print('New x-position: ' + str(alien['xPosition']))
+
+# removing keys from a dictionary using del
+alien = {'color': 'green', 'points': 5}
+print(alien)
+del alien['points']
+print(alien)
