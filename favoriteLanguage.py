@@ -7,6 +7,12 @@ favLanguage = {
     'phil': 'python',
     }
 
+# # printing individually
 # print('Sarah\'s favorite language is ' +
 #       favLanguage['sarah'].title() +
 #       '.')
+
+# printing using a for loop
+for name, language in favLanguage.items():
+    print(name.title() + '\'s favorite language is '
+          + language.title() + '.')
