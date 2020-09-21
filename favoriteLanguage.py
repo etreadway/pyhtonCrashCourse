@@ -7,6 +7,6 @@ favLanguage = {
     'phil': 'python',
     }
 
-print('Sarah\'s favorite language is ' +
-      favLanguage['sarah'].title() +
-      '.')
+# print('Sarah\'s favorite language is ' +
+#       favLanguage['sarah'].title() +
+#       '.')
