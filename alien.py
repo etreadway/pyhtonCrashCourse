@@ -39,26 +39,36 @@
 # ------------------------------------------------------------------
 
 # # applied moding a dict
-alien = {'xPosition': 0, 'yPosition': 25, 'speed': 'medium'}
-print('Origional x-position: ' + str(alien['xPosition']))
+# alien = {'xPosition': 0, 'yPosition': 25, 'speed': 'medium'}
+# print('Origional x-position: ' + str(alien['xPosition']))
+#
+# # Move the alien to the right
+# # Determine how far to move the alien based on its current speed.
+# if alien['speed'] == 'slow':
+#     x_increment = 1
+# elif alien['speed'] == 'medium':
+#     x_increment = 2
+# else:
+#     # This must be the fast alien
+#     x_increment = 3
+#
+# # This new position is the old position plus the increment.
+# alien['xPosition'] = alien['xPosition'] + x_increment
+#
+# print('New x-position: ' + str(alien['xPosition']))
+#
+# # removing keys from a dictionary using del
+# alien = {'color': 'green', 'points': 5}
+# print(alien)
+# del alien['points']
+# print
 
-# Move the alien to the right
-# Determine how far to move the alien based on its current speed.
-if alien['speed'] == 'slow':
-    x_increment = 1
-elif alien['speed'] == 'medium':
-    x_increment = 2
-else:
-    # This must be the fast alien
-    x_increment = 3
+# ------------------------------------
+alien0 = {'color': 'green', 'points': 5}
+alien1 = {'color': 'yellow', 'points': 10}
+alien2 = {'color': 'red', 'points': 15}
 
-# This new position is the old position plus the increment.
-alien['xPosition'] = alien['xPosition'] + x_increment
+aliens = [alien0, alien1, alien2]
 
-print('New x-position: ' + str(alien['xPosition']))
-
-# removing keys from a dictionary using del
-alien = {'color': 'green', 'points': 5}
-print(alien)
-del alien['points']
-print(alien)
+for alien in aliens:
+    print(alien)
