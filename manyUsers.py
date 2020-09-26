@@ -13,7 +13,7 @@ users = {'ainstein':{
 for userName, info in users.items():
     print('\nUsername: ' + userName)
 
-    fullName = info['first'] + ' ' + info['last'] 
+    fullName = info['first'] + ' ' + info['last']
     location = info['location']
 
     print('Full Name: ' + fullName.title())
