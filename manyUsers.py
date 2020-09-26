@@ -9,3 +9,12 @@ users = {'ainstein':{
             'location': 'paris',
             },
         }
+
+for userName, info in users.items():
+    print('\nUsername: ' + userName)
+
+    fullName = info['first'] + ' ' + info['last'] 
+    location = info['location']
+
+    print('Full Name: ' + fullName.title())
+    print('Location: ' + location.title())
