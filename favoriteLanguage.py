@@ -35,7 +35,7 @@ favLanguage = {
 #     print(language)
 
 for name, languages in favLanguage.items():
-    # for singuler language
+    # for singular language
     if len(languages) < 2:
         print(name.title() + '\'s favorite language is:')
         for language in languages:
