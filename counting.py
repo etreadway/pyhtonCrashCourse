@@ -34,3 +34,8 @@ for number in range(1,11):
 cubes = [number**3 for number in range(1,11)]
 print(cubes)
 
+# counting using a while loop instead of a for loop
+num = 1
+while num <= 5:
+    print(num)
+    num += 1
