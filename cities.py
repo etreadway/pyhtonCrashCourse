@@ -16,3 +16,16 @@ for city, info in cities.items():
     print('Location: ' + location.title())
     print('Population: ' + pop)
     print('Fun fact: ' + funFact)
+
+msg = '\nPlease enter the name of a city you think would be nice to visit: '
+
+while True:
+    city = input(msg)
+
+    if city.lower() == 'quit':
+        break
+    elif city.lower() in cities.keys():
+        print('Ive been to ' + city.title() + ' and it\'s wonderful.')
+    else:
+        print('I\'d love to go to ' + city.title() + '!')
+    print('Enter "quit" if you are finished or enter another city.')
