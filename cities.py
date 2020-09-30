@@ -1,10 +1,11 @@
 cities = {'athens':
-              {'country': 'greece', 'population': '~3.1m', 'fun fact': 'Birthplace of democracy'},
-          'venice':
-              {'country': 'italy', 'population': '~262k', 'fun fact': 'No roads... Vin Diesel would hate it'},
-          'florance':
-              {'country': 'italy', 'population': '~328k', 'fun fact': 'Birthplace of the Renaissance'}
-          }
+            {'country': 'greece', 'population': '~3.1m', 'fun fact': 'Birthplace of democracy'},
+        'venice':
+            {'country': 'italy', 'population': '~262k', 'fun fact': 'No roads... Vin Diesel would hate it'},
+        'florance':
+            {'country': 'italy', 'population': '~328k', 'fun fact': 'Birthplace of the Renaissance'}
+        }
+
 for city, info in cities.items():
     print('\n' + '*' * (len(city.title()) + 2))
     print('*' + city.title() + '*')
