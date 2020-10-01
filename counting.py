@@ -39,3 +39,12 @@ num = 1
 while num <= 5:
     print(num)
     num += 1
+
+# counting odd numbers using continue
+currentNum = 0
+while currentNum < 10:
+    currentNum += 1
+    if currentNum % 2 == 0:
+        continue
+    
+    print(currentNum)
