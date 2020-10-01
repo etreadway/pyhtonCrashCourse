@@ -42,3 +42,16 @@ for pet in pets:
     print('-' * 20)
     print('Type: ' + pet['type'].title())
     print('Owner: ' + pet['owner'].title())
+
+# building a list from the dictionaries
+animals =[]
+for pet in pets:
+        animals.append(pet['type'])
+
+print('\n')
+print(animals)
+# removing cats from the list 
+while 'cat' in animals:
+        animals.remove('cat')
+
+print(animals)
