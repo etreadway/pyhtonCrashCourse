@@ -11,34 +11,47 @@ sherly = {'type': 'cat',
           'name': 'sherly',
           }
 blacky = {'type': 'cat',
-          'owner': 'mom',
-          'name': 'blacky',
-          }
+        'owner': 'mom',
+        'name': 'blacky',
+        }
 janey = {'type': 'cat',
-         'owner': 'mom',
-         'name': 'janey',
-         }
+        'owner': 'mom',
+        'name': 'janey',
+        }
 shane = {'type': 'dog',
-         'owner': 'mom',
-         'name': 'shane',
-         }
+        'owner': 'mom',
+        'name': 'shane',
+        }
 daphnie = {'type': 'dog',
-           'owner': 'mom',
-           'name': 'daphnie',
-           }
+        'owner': 'mom',
+        'name': 'daphnie',
+        }
 doodle = {'type': 'dog',
-          'owner': 'wife & me',
-          'name': 'doodle',
-          }
+        'owner': 'wife & me',
+        'name': 'doodle',
+        }
 burrow = {'type': 'dog',
-          'owner': 'wife & me',
-          'name': 'burrow',
-          }
+        'owner': 'wife & me',
+        'name': 'burrow',
+        }
 
 pets = [cindy, tiny, sherly, blacky, janey, shane, daphnie, doodle, burrow]
 
 for pet in pets:
-    print('\n' + pet['name'].title())
-    print('-' * 20)
-    print('Type: ' + pet['type'].title())
-    print('Owner: ' + pet['owner'].title())
+        print('\n' + pet['name'].title())
+        print('-' * 20)
+        print('Type: ' + pet['type'].title())
+        print('Owner: ' + pet['owner'].title())
+
+# building a list from the dictionaries
+animals =[]
+for pet in pets:
+        animals.append(pet['type'])
+
+print('\n')
+print(animals)
+# removing cats from the list 
+while 'cat' in animals:
+        animals.remove('cat')
+
+print(animals)
