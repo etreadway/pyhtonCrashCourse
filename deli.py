@@ -1,10 +1,10 @@
 # list of sandwiches that need to be made
 sandwichOrders = ['pb&j',
-                  'turkey + cheese',
-                  'chicken salad',
-                  'pulled pork',
-                  'knuckle',
-                  ]
+                'turkey + cheese',
+                'chicken salad',
+                'pulled pork',
+                'knuckle',
+                ]
 
 finishedSandwiches = []
 # moving each sandwich to the finished list when they are made
