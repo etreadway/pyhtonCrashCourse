@@ -42,8 +42,3 @@ while flag == True:
 print('\nThank you for your purchase!')
 print('You have purchased ' + str(count) + ' tickets.')
 print('Your total is: $' + str(price))
-#TODO:
-# Build initial ask
-# Build extra ask
-# make sure to add to count and price
-# print total number of movie tickets and price
