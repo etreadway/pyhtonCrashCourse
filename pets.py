@@ -55,3 +55,16 @@ while 'cat' in animals:
         animals.remove('cat')
 
 print(animals)
+
+# using a function to print info about a pet
+def describePet(name, type='dog'):
+        '''Display information about a pet.'''
+        print('\nI have a ' + type + '.')
+        print('My ' + type + '\'s name is  ' + name.title() + '.')
+
+# keyword argument
+describePet(type='hamster', name='harry')
+# positional argument
+describePet('janie', 'cat')
+# default value
+describePet(name='cindy')
