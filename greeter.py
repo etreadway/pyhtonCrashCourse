@@ -11,9 +11,28 @@
 # else:
 #     print('You are ' + str(age) + ' years old')
 
-# using a function to greet different users
-def greetUser(username):
-    '''Display a simple greeting.'''
-    print('Hello, ' + username.title() + '!')
+# # using a function to greet different users
+# def greetUser(username):
+#     '''Display a simple greeting.'''
+#     print('Hello, ' + username.title() + '!')
+#
+# greetUser('jesse')
 
-greetUser('jesse')
+def getFormattedName(firstName, lastName):
+    '''Return a full name, neatly formatted.'''
+    fullName = firstName + ' ' + lastName
+    return fullName.title()
+
+# this is an infinite loop!
+while True:
+    print('\nPlease tell me your name:')
+    print('(Enter \'q\' at any time to quit)')
+    fName = input('First name: ')
+    if fName == 'q':
+        break
+    lName = input('Last name: ')
+    if lName == 'q':
+        break
+
+    formattedName = getFormattedName(fName, lName)
+    print('\nHello, ' + formattedName + '!')
