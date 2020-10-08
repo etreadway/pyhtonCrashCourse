@@ -20,5 +20,6 @@ def showcomplete(completed):
 unprintedDesigns = ['iphone case', 'robot pendant', 'dodecahedron']
 completedModels = []
 
-printModels(unprintedDesigns, completedModels)
+printModels(unprintedDesigns[:], completedModels)
 showcomplete(completedModels)
+print(unprintedDesigns)
