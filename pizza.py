@@ -1,11 +1,10 @@
-# Storing info about a pizza being ordered (lists in dictionary)
+# Using an arbitrary number of keyword arguments
 
-pizza = {
-    'crust': 'thick',
-    'toppings': ['pineapple', 'pepperoni', 'extra cheese'],
-    }
-# Summarizing the order
-print('You ordered a ' + pizza['crust'] + '-crust pizza ' +
-      'with the following toppings:')
-for topping in pizza['toppings']:
-    print('\t' + topping)
+def makePizza(size, *toppings):
+    '''Summarize the pizza we are about to make.'''
+    print('\nMaking a ' + str(size) +
+        '-inch pizza with the following toppings:')
+    for topping in toppings:
+        print('- ' + topping)
+makePizza(16, 'pepperoni')
+makePizza(12, 'mushrooms', 'green peppers', 'extra cheese')
