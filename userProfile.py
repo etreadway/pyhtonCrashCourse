@@ -12,3 +12,9 @@ userProfile = buildProfile('albert', 'einstein',
                             feild='physics')
 
 print(userProfile)
+
+me = buildProfile('eric', 't',
+                location='h-town',
+                feild='programing',
+                )
+print(me)
