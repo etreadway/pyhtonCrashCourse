@@ -1,8 +1,8 @@
 class Restaurant():
-    '''An class for discribing a restaurant. '''
+    '''A class for discribing a restaurant. '''
 
     def __init__(self, name, foodType):
-        '''Initialize name adnf food type attributes.'''
+        '''Initialize name adn food type attributes.'''
         self.name = name
         self.foodType = foodType
 
@@ -14,7 +14,16 @@ class Restaurant():
         '''Tells customers that the restaurant is open'''
         print(self.name.title() + ' is open.')
 
-colinas = Restaurant('colinas', 'Mexican')
+molinas = Restaurant('molinas', 'Mexican')
+whataburger = Restaurant('whataburger', 'fast')
+colinas = Restaurant('colinas', 'mexican')
+
+
+molinas.discribeRestaurant()
+molinas.openRestaurant()
+
+whataburger.discribeRestaurant()
+whataburger.openRestaurant()
 
 colinas.discribeRestaurant()
 colinas.openRestaurant()
