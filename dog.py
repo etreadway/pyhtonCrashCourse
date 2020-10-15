@@ -2,7 +2,7 @@ class Dog():
     """A simple attempt to model a dog."""
 
     def __init__(self, name, age):
-        '''Initalize name and age attributes.'''
+        '''Initialize name and age attributes.'''
         self.name = name
         self.age = age
 
