@@ -32,13 +32,13 @@ class User():
         # preforming a gender check
         genderTerm = ''
         if self.gender.lower() == 'f':
-            genderTerm = 'beutiful'
+            genderTerm = 'beautiful'
         elif self.gender.lower() == 'm':
-            genderTerm = 'handsom'
+            genderTerm = 'handsome'
         else:
             genderTerm = 'stunning'
         
-        print('Whell if it isn\'t the ' + genderTerm + ' ' + firstLast + '!')
+        print('Well if it isn\'t the ' + genderTerm + ' ' + firstLast + '!')
         print('Looking great for ' + str(self.age) + '.')
 
     def incrementLoginAttempt(self):
