@@ -11,6 +11,7 @@ class User():
         self.lastName = lastName
         self.age = age
         self.gender = gender
+        self.loginAttempts = 0
     
     def discribeUser(self):
         """
@@ -40,6 +41,14 @@ class User():
         print('Whell if it isn\'t the ' + genderTerm + ' ' + firstLast + '!')
         print('Looking great for ' + str(self.age) + '.')
 
+    def incrementLoginAttempt(self):
+        '''A method to keep track of login attempts.'''
+        self.loginAttempts += 1
+
+    def resetLoginAttempt(self):
+        '''A method to reset the number of login attempts.'''
+        self.loginAttempts = 0
+
 
 
 theo = User('theo','logen', 52, 'm')
@@ -50,3 +59,12 @@ theo.greetUser()
 
 holly.discribeUser()
 holly.greetUser()
+
+print('\n')
+theo.incrementLoginAttempt()
+theo.incrementLoginAttempt()
+theo.incrementLoginAttempt()
+theo.incrementLoginAttempt()
+print(theo.loginAttempts)
+theo.resetLoginAttempt()
+print(theo.loginAttempts)
