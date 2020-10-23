@@ -21,7 +21,7 @@ class IceCreamStand(Restaurant):
     def __init__(self, name, foodType):
         '''
         Initialize aspects of the parent class.
-        Then initialize aspects of the parent class.
+        Then initialize aspects of the child class.
         '''
         super().__init__(name, foodType)
         self.flavors = ['vanilla',
