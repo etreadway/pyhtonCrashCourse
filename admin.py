@@ -57,6 +57,12 @@ class Admin(User):
         Also initialize aspects of the child class.
         '''
         super().__init__(firstName, lastName, age, gender)
+        self.privileges = Privileges()
+
+class Privileges():
+    '''An attempt to containerize the privilege atribute'''
+
+    def __init__(self):
         self.privileges = ['add post',
                            'delete post',
                            'edit post',
@@ -64,10 +70,11 @@ class Admin(User):
                            'make announcement',
                            ]
 
+
     def showPrivileges(self):
         print('\nYour admin privileges are:')
         for privilege in self.privileges:
             print(privilege)
 
 me = Admin('low', 'beer', 30, 'm')
-me.showPrivileges()
+me.privileges.showPrivileges()
