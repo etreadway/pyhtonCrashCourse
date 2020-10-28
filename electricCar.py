@@ -47,13 +47,23 @@ class Battery():
     def getRange(self):
         '''Print a statement about the range this battery provides.'''
         if self.batterySize == 70:
-            range = 240
+            carRange = 240
         elif self.batterySize == 85:
-            range = 270
+            carRange = 270
 
-        message = 'This car can go approximately ' + str(range)
+        message = 'This car can go approximately ' + str(carRange)
         message += ' miles on a full charge.'
         print(message)
+
+    def upgradeBattery(self):
+        '''A method for upgrading the batery.'''
+        if self.batterySize <= 85:
+            self.batterySize = 85
+            print('Your battery has been upgraded!')
+        elif self.batterySize == 85:
+            print('You have already been upgraded.')
+        elif self.batterySize >= 85:
+            print('This would be a downgrade.')
 
 
 class ElectricCar(Car):
@@ -72,4 +82,6 @@ class ElectricCar(Car):
 myTesla = ElectricCar('tesla', 'model s', 2016)
 print(myTesla.getDescriptiveName())
 myTesla.battery.describeBattery()
+myTesla.battery.getRange()
+myTesla.battery.upgradeBattery()
 myTesla.battery.getRange()
