@@ -1,6 +1,6 @@
 class User():
     '''
-    A class for discribing a user.
+    A class for describing a user.
     '''
 
     def __init__(self, firstName, lastName, age, gender):
@@ -50,7 +50,7 @@ class User():
         self.loginAttempts = 0
 
 class Admin(User):
-    '''Represents aspects of a user that are spacific to the Admin.'''
+    '''Represents aspects of a user that are specific to the Admin.'''
     def __init__(self, firstName, lastName, age, gender):
         '''
         Initialize aspects of the parent class.
@@ -60,7 +60,7 @@ class Admin(User):
         self.privileges = Privileges()
 
 class Privileges():
-    '''An attempt to containerize the privilege atribute'''
+    '''An attempt to containerize the privilege attribute'''
 
     def __init__(self):
         self.privileges = ['add post',
