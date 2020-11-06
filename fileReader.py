@@ -1,3 +1,5 @@
-with open('piDigits.txt') as fileObject:
-    contents = fileObject.read()
-    print(contents)
+fileName = 'piDigits.txt'
+
+with open(fileName) as fileObject:
+    for line in fileObject:
+        print(line)
