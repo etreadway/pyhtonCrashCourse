@@ -1,0 +1,9 @@
+In python you can take user input
+In python you can do repetive tasks quickly
+In python you can manage large data sets easily
+In python you can make a rubix cube scrambler
+In python you can play rock, paper, scissors
+In python you can write programs for Windows, Mac, and Linux
+In python you can store veriables
+In python you can do calculations
+In python you can write message templates
