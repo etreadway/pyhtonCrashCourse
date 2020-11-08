@@ -1,5 +1,5 @@
 fileName = 'guestBook.txt'
-fo = open(fileName, 'r+')
+fo = open(fileName, 'a+')
 
 check = ''
 while check.lower() != 'n':
@@ -9,5 +9,5 @@ while check.lower() != 'n':
     else:
         fo.write(name.title() + '\n')
         print('Thanks for signing the guest book!')
-    check = input('Whould you like to put another name in the guestbook? (y/n)')
+    check = input('Whould you like to put another name in the guestbook? (y/n) ')
 fo.close()
