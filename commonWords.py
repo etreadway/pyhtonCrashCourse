@@ -7,8 +7,8 @@ def commonWord(fileName, word):
     except FileNotFoundError:
         print('Could not find ' + fileName)
     else:
-        num = content.count(word)
+        num = content.lower().count(word)
         print('The word ' + word + ' appears ' +
               str(num) + ' times.')
 
-commonWord('alice.txt', 'a')
+commonWord('alice.txt', 'queen')
