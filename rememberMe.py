@@ -23,9 +23,16 @@ def greetUser():
     '''Greet the user by name.'''
     username = getStoredUsername()
     if username:
-        print('Welcome back, ' + username + '!')
+        print('You are currently logged in as ' + username + '.')
+        logout = input('Is this correct? (Y/n) ')
+        if logout.lower() == 'n':
+            username = getNewUsername()
+            print('We will remember you next time you come back, ' +
+                  username + '!')
+        else:
+            print('Welcome back, ' + username + '!')
     else:
         username = getNewUsername()
-        print('We will remimber you next time you come back, ' +
+        print('We will remember you next time you come back, ' +
               username + '!')
 greetUser()
