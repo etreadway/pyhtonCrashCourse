@@ -64,11 +64,11 @@ class Privileges():
 
     def __init__(self):
         self.privileges = ['add post',
-                           'delete post',
-                           'edit post',
-                           'ban user',
-                           'make announcement',
-                           ]
+                        'delete post',
+                        'edit post',
+                        'ban user',
+                        'make announcement',
+                        ]
 
 
     def showPrivileges(self):
