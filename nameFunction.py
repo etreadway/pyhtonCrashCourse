@@ -1,4 +1,7 @@
-def getFormattedName(first, last):
+def getFormattedName(first, last, middle=''):
     '''Geretate a neatly formatted full name.'''
-    fullName = first + ' ' + last
+    if middle:
+        fullName = first + ' ' + middle + ' ' + last
+    else:
+        fullName = first + ' ' + last
     return fullName.title()
