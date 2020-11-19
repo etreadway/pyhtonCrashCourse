@@ -4,23 +4,27 @@ from survey import AnonymousSurvey
 class TestAnonymousSurvey(unittest.TestCase):
     '''Tests for the class AnonymousSurvey'''
 
+    def setUp(self):
+        '''
+        Create a survey and a set of responses for use in all test methods.
+        '''
+        question = 'What language did you first learn to speak?'
+        self.mySurvey = AnonymousSurvey(question)
+        self.responses = ['English', 'Spanish', 'mandarin']
+
     def testStoreSingleResponse(self):
         '''Test that a single response in stored prpoerly'''
-        question = 'What language did you first learn to speak?'
-        mySurvey = AnonymousSurvey(question)
-        mySurvey.storeResponse('English')
+        self.mySurvey.storeResponse(self.responses[0])
+        self.assertIn(self.responses[0], self.mySurvey.responses)
 
-        self.assertIn('English', mySurvey.responses)
 
     def testStoreThreeResponses(self):
         '''Test that three individual responses are stored properly'''
-        question = 'What language did you first learn to speak?'
-        mySurvey = AnonymousSurvey(question)
-        responses = ['English', 'Spanish', 'Mandarin']
-        for response in responses:
-            mySurvey.storeResponse(response)
 
-        for response in responses:
-            self.assertIn(response, mySurvey.responses)
+        for response in self.responses:
+            self.mySurvey.storeResponse(response)
+
+        for response in self.responses:
+            self.assertIn(response, self.mySurvey.responses)
 
 unittest.main()
